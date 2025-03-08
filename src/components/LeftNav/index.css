@@ -1,0 +1,25 @@
+.left-nav {
+    height: 100%;
+    width: 150px;
+    background-color: white;
+    margin: 0px 0px 0px 5px;
+    text-align: left;
+}
+
+.custom-button {
+    color: black !important;
+    margin-bottom: 10px !important;
+    width: 100%;
+    border-radius: 0px !important
+}
+
+.custom-button-content {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    gap: 10%;
+}
+
+.custom-button.selected {
+    background-color: #dfdfdf;
+}

@@ -1,18 +1,25 @@
 import React from 'react';
 import './App.css';
-import Grid from './components/Grid/Grid';
 import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community';
-import TopNav from './components/TopNav/TopNav';
+import { TopNav, LeftNav, Grid } from './components';
 
-// Register all Community features
 ModuleRegistry.registerModules([AllCommunityModule]);
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TopNav />
-        <Grid />
       </header>
+      <nav>
+        <TopNav />
+      </nav>
+      <div className='aside-center'>
+        <aside>
+          <LeftNav />
+        </aside>
+        <center>
+          <Grid />
+        </center>
+      </div>
     </div>
   );
 }

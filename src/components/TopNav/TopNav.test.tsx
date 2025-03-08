@@ -1,5 +1,5 @@
 import { cleanup, render, screen, waitFor } from '@testing-library/react';
-import TopNav from './TopNav';
+import TopNav from '.';
 
 
 describe("Tests TopNavbar", () => {
